@@ -32,11 +32,10 @@ function App() {
   useEffect(() => {
     const currentMessages = messages;
     let botMessages = [];
-    // If the last message is from the user and says 'hello'
+    // If the last message is from the user, bot should respond
     if (messages.length > 0 && messages[messages.length - 1].isUser) {
 
       if (messages[messages.length - 1].text.toLowerCase() === 'hello') {
-        // Simulate a bot response
         botMessages.push({
           id: Math.random(),
           text: 'Hello! How can I help you today?',
@@ -44,7 +43,6 @@ function App() {
           messageType: 'text',
         });
       } else if (messages[messages.length - 1].text.toLowerCase() === 'show inventory') {
-        // Simulate a bot response
         botMessages.push({
           id: Math.random(),
           text: '',
