@@ -1,0 +1,108 @@
+.container {
+  width: 100%;
+  max-width: 600px;
+  height: 90vh;
+  margin: 1rem auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  flex: 1;
+}
+
+.messages-container {
+  display: flex;
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  flex-direction: column;
+}
+
+.input-container {
+  border-top: 1px solid #ccc;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  height: 3rem;
+  gap: 8px;
+  border-radius: 4px;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.text-input {
+  display: flex;
+  flex: 5;
+  padding: 8px;
+  border: 1px solid #ccc;
+  align-items: center;
+}
+
+.input-submit {
+  padding: 8px 16px;
+  border: none;
+  display: flex;
+  flex: 1;
+  border-radius: 4px;
+  background-color: #007bff;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.input-submit:hover {
+  background-color: #0056b3;
+}
+
+.message{
+  padding: 10px 15px;
+  margin: 8px 0;
+  border-radius: 12px;
+  max-width: 80%;
+  min-width: 60%;
+  word-wrap: wrap;
+  font-size: 14px;
+}
+
+.user-message {
+  background-color: #007bff;
+  color: #fff;
+  align-self: flex-end;
+}
+
+.bot-message {
+  background-color: #f1f1f1;
+  color: #333;
+  align-self: flex-start;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buy-button {
+  background-color: #28a745;
+  color: #fff;
+  padding: 8px 16px;
+  width: 3rem;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buy-button p {
+  margin: 0;
+}
+
+.buy-button:hover {
+  background-color: #218838;
+}
+
